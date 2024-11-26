@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background-color: #f4f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 167%;
+  letter-spacing: 0.5px;
+  color: #f07f2e;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+/* Заголовок */
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Контейнер для фільтрів */
+label,
+input {
+  font-size: 16px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #4a90e2;
+}
+
+/* Стилізація таблиці */
+table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+thead {
+  background-color: #575252;
+  color: #fff;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+tbody tr {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+  background-color: #f1f5fb;
+}
+
+tbody td {
+  padding: 12px 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Стилізація заголовків таблиці */
+th {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+td,
+th {
+  padding: 15px;
+}
+
+.search {
+  display: flex;
+  gap: 30px;
+}
+
+/* Медіа-запит для адаптації на мобільних пристроях */
+@media (max-width: 600px) {
+  table {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

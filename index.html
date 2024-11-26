@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boicoins</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="header__logo"
+        ><img src="boicoins.png" alt="Boicoins" class="logo" />oicoins</a
+      >
+    </div>
+
+    <div class="search">
+      <div class="search-input">
+        <label for="nameFilter">Пошук за ім'ям:</label>
+        <input
+          type="text"
+          id="nameFilter"
+          oninput="applyFilters()"
+          placeholder="Введіть ім'я"
+        />
+      </div>
+      <div class="search-input">
+        <label for="emailFilter">Фільтр за класом:</label>
+        <input
+          type="text"
+          id="emailFilter"
+          oninput="applyFilters()"
+          placeholder="Введіть клас"
+        />
+      </div>
+    </div>
+
+    <table id="data-table" border="1">
+      <thead>
+        <tr>
+          <th>Ім'я</th>
+          <th>Клас</th>
+          <th>Сума в гаманці</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Дані будуть додані тут за допомогою JavaScript -->
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
